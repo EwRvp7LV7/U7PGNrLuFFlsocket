@@ -22,7 +22,7 @@ func init() {
 	// lg = logger.NewLogger()
 
 	viper.AutomaticEnv()
-	viper.SetDefault("TUNNEL_HOST", "localhost:18080")
+	viper.SetDefault("TUNNEL_HOST", "localhost:8080")
 	viper.SetDefault("SECURE", false)
 }
 
