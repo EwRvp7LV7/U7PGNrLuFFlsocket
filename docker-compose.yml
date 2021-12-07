@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  tunnelclient:
+    #container_name: tunnelclient
+    image: ghcr.io/EwRvp7LV7/nocloud-tunnel-mesh/client:latest
+    environment:
+      TUNNEL_HOST: tunnelserver:8080
+      SECURE: false
+  tunnelserver:
+    #container_name: gprs-server
+    image: ghcr.io/EwRvp7LV7/nocloud-tunnel-mesh/server:latest
+    ports:
+      - 18080:8080
